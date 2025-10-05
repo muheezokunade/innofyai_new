@@ -1,68 +1,190 @@
 import Link from 'next/link'
-import { ArrowRight, Bot, Target, Zap, Sparkles, TrendingUp, Users, Clock } from 'lucide-react'
+import { ArrowRight, Bot, Target, Zap, TrendingUp, Users, Clock, CheckCircle, Star, MessageSquare, FileText, Search, BarChart3, Shield, Mail, Calendar, CreditCard, Smartphone, Globe, Database, Settings, BookOpen, Download, ChevronDown } from 'lucide-react'
 import { AIReceptionistDemo } from '@/components/ai-receptionist-demo'
-import { LeadScorerDemo } from '@/components/lead-scorer-demo'
 
 const products = [
   {
     id: 'ai-receptionist',
-    name: 'AI Receptionist',
-    description: '24/7 intelligent customer engagement that converts visitors into qualified leads.',
+    name: 'AI Receptionist 2.0',
+    description: 'Turn visitors into booked appointments on web + WhatsApp.',
     icon: Bot,
-    kpi: 'conversion-rate',
-    kpiValue: 45,
+    kpi: '+38% bookings',
     href: '/products/ai-receptionist',
     color: 'from-blue-500 to-cyan-500'
   },
   {
     id: 'lead-scorer',
-    name: 'Lead Scorer',
-    description: 'Automatically prioritize leads based on engagement and behavior patterns.',
+    name: 'Predictive Lead Scorer',
+    description: 'Focus on leads most likely to book.',
     icon: Target,
-    kpi: 'response-time',
-    kpiValue: 80,
+    kpi: 'Top-decile win rate ↑',
     href: '/products/lead-scorer',
     color: 'from-purple-500 to-pink-500'
   },
   {
     id: 'adaptive-follow-up',
     name: 'Adaptive Follow-up',
-    description: 'Personalized follow-up sequences that adapt to customer behavior.',
+    description: 'Email/WhatsApp/SMS timing that actually gets replies.',
     icon: Zap,
-    kpi: 'engagement-rate',
-    kpiValue: 65,
+    kpi: '−42% first-reply time',
     href: '/products/adaptive-follow-up',
     color: 'from-green-500 to-emerald-500'
+  },
+  {
+    id: 'whatsapp-commerce',
+    name: 'WhatsApp Commerce Brain',
+    description: 'Menu → cart → reorder nudges in chat.',
+    icon: MessageSquare,
+    kpi: 'Higher order conversion',
+    href: '/products/whatsapp-commerce',
+    color: 'from-orange-500 to-red-500'
+  },
+  {
+    id: 'review-miner',
+    name: 'Review Miner + Smart Reply',
+    description: 'Grow ratings, deflect public complaints.',
+    icon: Star,
+    kpi: '+1.1★ avg',
+    href: '/products/review-miner',
+    color: 'from-yellow-500 to-orange-500'
+  },
+  {
+    id: 'document-ai',
+    name: 'Document AI',
+    description: 'Parse proposals/contracts and auto-fill your CRM/Notion.',
+    icon: FileText,
+    kpi: 'Minutes, not hours',
+    href: '/products/document-ai',
+    color: 'from-indigo-500 to-purple-500'
+  },
+  {
+    id: 'local-seo',
+    name: 'Local SEO Page Generator',
+    description: 'Rank for "service + city" at scale.',
+    icon: Search,
+    kpi: 'Impressions → clicks',
+    href: '/products/local-seo-generator',
+    color: 'from-teal-500 to-cyan-500'
+  },
+  {
+    id: 'owners-copilot',
+    name: 'Owner\'s Copilot',
+    description: '"What happened, why, what to do" across GA4 + CRM.',
+    icon: BarChart3,
+    kpi: 'Actions per week ↑',
+    href: '/products/owners-copilot',
+    color: 'from-pink-500 to-rose-500'
+  },
+  {
+    id: 'ticket-triage',
+    name: 'Smart Ticket Triage',
+    description: 'Route by topic/urgency and draft first replies.',
+    icon: Settings,
+    kpi: 'FCR ↑',
+    href: '/products/ticket-triage',
+    color: 'from-slate-500 to-gray-500'
+  },
+  {
+    id: 'attribution-copilot',
+    name: 'Attribution & Budget Copilot',
+    description: 'See what truly drove bookings; adjust spend.',
+    icon: CreditCard,
+    kpi: 'Cost per booking ↓',
+    href: '/products/attribution-copilot',
+    color: 'from-emerald-500 to-green-500'
   }
 ]
 
-const features = [
+const services = [
   {
-    icon: Sparkles,
-    title: 'AI-Powered Intelligence',
-    description: 'Advanced machine learning algorithms that understand context and deliver personalized experiences.'
+    title: 'Website & Digital Presence',
+    description: 'Conversion-ready, fast, and SEO-smart.',
+    bullets: ['Landing pages that load fast', 'Clear offers', 'Analytics wired'],
+    icon: Globe
   },
   {
-    icon: TrendingUp,
-    title: 'Real-Time Analytics',
-    description: 'Comprehensive insights and performance metrics to optimize your customer engagement strategy.'
+    title: 'Brand & Marketing Strategy',
+    description: 'Positioning that sells, content that compounds.',
+    bullets: ['ICP & messaging', 'Content plan', 'Funnel & offers'],
+    icon: Target
   },
   {
-    icon: Users,
-    title: 'Seamless Integration',
-    description: 'Works with your existing CRM, email tools, and business systems without disruption.'
+    title: 'Automation & CX',
+    description: 'WhatsApp flows, CRM, and n8n workflows.',
+    bullets: ['Lead routing', 'Nurtures', 'Alerts & SLAs'],
+    icon: Settings
   },
   {
-    icon: Clock,
-    title: '24/7 Availability',
-    description: 'Never miss a lead again with round-the-clock customer engagement and support.'
+    title: 'Social Media Management',
+    description: 'Consistent presence with real outcomes.',
+    bullets: ['Calendar', 'Creation', 'Reporting'],
+    icon: MessageSquare
+  },
+  {
+    title: 'CRO & Local SEO',
+    description: 'Turn traffic into leads, rank for "service + city."',
+    bullets: ['Experiments', 'Heatmaps', 'Schema pages'],
+    icon: Search
+  },
+  {
+    title: 'CRM Implementation',
+    description: 'HubSpot/Pipedrive fast, clean, and usable.',
+    bullets: ['Pipelines', 'Dashboards', 'Playbooks'],
+    icon: Database
   }
 ]
 
-const stats = [
-  { label: 'Businesses Helped', value: '500+', icon: Users },
-  { label: 'Conversations Automated', value: '1M+', icon: Bot },
-  { label: 'Conversion Improvement', value: '45%', icon: TrendingUp }
+const integrations = [
+  { name: 'HubSpot', icon: Database },
+  { name: 'Pipedrive', icon: Database },
+  { name: 'GA4', icon: BarChart3 },
+  { name: 'WhatsApp', icon: MessageSquare },
+  { name: 'Twilio', icon: Phone },
+  { name: 'Calendly', icon: Calendar },
+  { name: 'Stripe', icon: CreditCard },
+  { name: 'Notion', icon: FileText },
+  { name: 'Slack', icon: MessageSquare }
+]
+
+const resources = [
+  {
+    title: 'How we cut reply time by 42% with adaptive follow-ups',
+    category: 'Case Study',
+    readTime: '5 min read'
+  },
+  {
+    title: 'A practical guide to WhatsApp ordering for restaurants',
+    category: 'Guide',
+    readTime: '8 min read'
+  },
+  {
+    title: 'Attribution that sales actually trusts',
+    category: 'Strategy',
+    readTime: '6 min read'
+  }
+]
+
+const faqs = [
+  {
+    question: 'Do I need a developer?',
+    answer: 'No—most tools connect with your calendar, CRM, or WhatsApp in minutes.'
+  },
+  {
+    question: 'Can I start free?',
+    answer: 'Yes, the Free plan lets you try the tools with usage caps.'
+  },
+  {
+    question: 'How do you handle privacy?',
+    answer: 'Least-data approach, encryption at rest/in transit, optional redaction, and a clear DPA.'
+  },
+  {
+    question: 'Will you help us implement?',
+    answer: 'Absolutely. Our services team can launch end-to-end in days, not months.'
+  },
+  {
+    question: 'What if it doesn\'t work for us?',
+    answer: 'We publish 14-day uplift reports. If a tool isn\'t moving the metric, we adjust or stop.'
+  }
 ]
 
 export default function Home() {
@@ -81,8 +203,7 @@ export default function Home() {
               </h1>
               
               <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
-                Tools and services that convert visitors, speed replies, and reveal what works. 
-                Turn your business into a lead-generating machine with AI that never sleeps.
+                InnofyAI gives owners simple tools that convert visitors, speed replies, and show what actually works—without hiring a tech team.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
@@ -100,16 +221,15 @@ export default function Home() {
                 </Link>
               </div>
               
-              <div className="pt-4">
-                <Link href="/security" className="text-sm text-gray-500 underline hover:text-gray-700">
-                  Security & Privacy
-                </Link>
-              </div>
+              <p className="text-sm text-gray-500">No credit card needed · Setup in minutes</p>
             </div>
             
             <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-purple-500/20 to-pink-500/20 rounded-3xl blur-2xl"></div>
-              <div className="relative bg-white border border-gray-200 rounded-2xl p-6 shadow-2xl">
+              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-3xl blur-2xl"></div>
+              <div className="relative bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl p-6 shadow-2xl">
+                <div className="text-center mb-4">
+                  <p className="text-sm text-gray-600">AI Receptionist · Live booking demo</p>
+                </div>
                 <AIReceptionistDemo />
               </div>
             </div>
@@ -117,88 +237,350 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section className="py-20 bg-slate-50">
+      {/* Trust Logos */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {stats.map((stat, index) => (
-              <div key={index} className="text-center group">
-                <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <stat.icon className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-4xl font-bold text-slate-900 mb-2">{stat.value}</div>
-                <div className="text-slate-600 font-medium">{stat.label}</div>
-              </div>
-            ))}
+          <div className="text-center mb-8">
+            <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">Trusted by teams and owners</p>
+          </div>
+          <div className="flex items-center justify-center space-x-12 opacity-60">
+            <div className="text-2xl font-bold text-gray-400">Company A</div>
+            <div className="text-2xl font-bold text-gray-400">Company B</div>
+            <div className="text-2xl font-bold text-gray-400">Company C</div>
+            <div className="text-2xl font-bold text-gray-400">Company D</div>
+            <div className="text-2xl font-bold text-gray-400">Company E</div>
           </div>
         </div>
       </section>
 
-      {/* Products */}
+      {/* Products Rail */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
-              AI Products That Work
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+              10 micro tools that work while you sleep
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Powerful, focused AI tools that solve real business problems without the complexity.
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Each tool solves one job end-to-end. Plug in, prove the lift, then scale.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
             {products.map((product) => (
               <Link
                 key={product.id}
                 href={product.href}
-                className="group relative bg-white border border-slate-200 rounded-2xl p-8 hover:shadow-2xl transition-all duration-500 hover:-translate-y-2"
+                className="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className={`absolute inset-0 bg-gradient-to-br ${product.color} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}></div>
-                <div className="relative">
-                  <div className={`w-16 h-16 bg-gradient-to-br ${product.color} rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <product.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4">{product.name}</h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">{product.description}</p>
-                  <div className="flex items-center justify-between">
-                    <div className="bg-green-50 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
-                      +{product.kpiValue}% {product.kpi.replace('-', ' ')}
-                    </div>
-                    <span className="text-blue-600 font-medium group-hover:text-blue-700 flex items-center">
-                      Learn more
-                      <ArrowRight className="ml-1 w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                    </span>
-                  </div>
+                <div className={`w-12 h-12 bg-gradient-to-br ${product.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <product.icon className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
+                <p className="text-gray-600 text-sm mb-3">{product.description}</p>
+                <div className="flex items-center justify-between">
+                  <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs font-medium">
+                    {product.kpi}
+                  </span>
+                  <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
                 </div>
               </Link>
             ))}
           </div>
+          
+          <div className="text-center mt-12">
+            <Link
+              href="/products"
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              View All Tools
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
-      {/* Features */}
-      <section className="py-24 bg-slate-50">
+      {/* Proof Section */}
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
-              Why Choose InnofyAI?
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+              Proof over promises
             </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Built for modern businesses that need results, not complexity.
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Before → After funnel</h3>
+              <div className="bg-white rounded-2xl p-8 shadow-sm">
+                <div className="space-y-4">
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600">Site visitor</span>
+                    <div className="w-32 h-3 bg-gray-200 rounded-full">
+                      <div className="w-24 h-3 bg-gray-400 rounded-full"></div>
+                    </div>
+                    <span className="text-sm text-gray-500">100%</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600">Lead</span>
+                    <div className="w-32 h-3 bg-gray-200 rounded-full">
+                      <div className="w-16 h-3 bg-blue-400 rounded-full"></div>
+                    </div>
+                    <span className="text-sm text-gray-500">25%</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span className="text-gray-600">Booked call</span>
+                    <div className="w-32 h-3 bg-gray-200 rounded-full">
+                      <div className="w-20 h-3 bg-green-400 rounded-full"></div>
+                    </div>
+                    <span className="text-sm text-gray-500">38%</span>
+                  </div>
+                </div>
+                <p className="text-xs text-gray-500 mt-4">Median of recent deployments; sample ≥ 20 accounts; 14-day window.</p>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">KPI tiles</h3>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm">
+                  <div className="text-3xl font-bold text-blue-600 mb-2">+38%</div>
+                  <div className="text-sm text-gray-600">average lift in bookings</div>
+                </div>
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm">
+                  <div className="text-3xl font-bold text-green-600 mb-2">−42%</div>
+                  <div className="text-sm text-gray-600">time-to-first-reply</div>
+                </div>
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm">
+                  <div className="text-3xl font-bold text-yellow-600 mb-2">+1.1★</div>
+                  <div className="text-sm text-gray-600">rating improvement</div>
+                </div>
+                <div className="bg-white rounded-xl p-6 text-center shadow-sm">
+                  <div className="text-3xl font-bold text-purple-600 mb-2">14-day</div>
+                  <div className="text-sm text-gray-600">uplift reports, always</div>
+                </div>
+              </div>
+              <div className="mt-6">
+                <Link
+                  href="/case-studies"
+                  className="text-blue-600 hover:text-blue-700 font-medium"
+                >
+                  See case studies →
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Teaser */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+              Expert services to amplify your tools
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              When you need hands-on help, our team ships the fastest path to impact.
             </p>
           </div>
           
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {services.map((service, index) => (
+              <div key={index} className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
+                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
+                  <service.icon className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
+                <p className="text-gray-600 mb-6">{service.description}</p>
+                <ul className="space-y-2">
+                  {service.bullets.map((bullet, bulletIndex) => (
+                    <li key={bulletIndex} className="flex items-center text-sm text-gray-600">
+                      <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                      {bullet}
+          </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+          
+          <div className="text-center mt-12">
+            <Link
+              href="/contact"
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+            >
+              Book a Discovery Call
+              <ArrowRight className="ml-2 w-4 h-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Training Teaser */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            Make AI practical for your team
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Role-based workshops for owners, marketing, support, and analysts—using your data and our playbooks.
+          </p>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <BookOpen className="w-6 h-6 text-green-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Live, hands-on sessions</h3>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <FileText className="w-6 h-6 text-blue-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Templates you'll actually use</h3>
+            </div>
+            <div className="bg-white rounded-xl p-6 shadow-sm">
+              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
+                <Star className="w-6 h-6 text-purple-600" />
+              </div>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Certificates and badges</h3>
+            </div>
+          </div>
+          
+          <Link
+            href="/training"
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Schedule a Training
+            <ArrowRight className="ml-2 w-4 h-4" />
+          </Link>
+        </div>
+      </section>
+
+      {/* Integrations Strip */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
+            <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">Works with your stack</p>
+          </div>
+          <div className="flex items-center justify-center space-x-8 opacity-60">
+            {integrations.map((integration, index) => (
+              <div key={index} className="flex items-center space-x-2">
+                <integration.icon className="w-6 h-6 text-gray-400" />
+                <span className="text-gray-600 font-medium">{integration.name}</span>
+              </div>
+            ))}
+          </div>
+          <p className="text-center text-sm text-gray-500 mt-4">Use our library of ready-to-run n8n recipes.</p>
+        </div>
+      </section>
+
+      {/* Templates Gallery Teaser */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+            Start fast with proven templates
+          </h2>
+          <p className="text-xl text-gray-600 mb-8">
+            Receptionist scripts, follow-up cadences, review replies, SEO page blueprints, and more.
+          </p>
+          
+          <Link
+            href="/templates"
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+          >
+            Browse Templates
+            <ArrowRight className="ml-2 w-4 h-4" />
+          </Link>
+        </div>
+      </section>
+
+      {/* Testimonials */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <blockquote className="text-2xl font-medium text-gray-900 italic mb-6">
+              "InnofyAI recovered leads we were losing every day. Bookings up in weeks, not months."
+            </blockquote>
+            <p className="text-gray-600">— Founder, Local Services</p>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {features.map((feature, index) => (
-              <div key={index} className="group bg-white rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
-                <div className="flex items-start space-x-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
-                    <feature.icon className="w-6 h-6 text-white" />
+            <div className="bg-gray-50 rounded-xl p-6">
+              <p className="text-gray-700 italic mb-4">"Setup took minutes. The 2-week report made the ROI obvious."</p>
+            </div>
+            <div className="bg-gray-50 rounded-xl p-6">
+              <p className="text-gray-700 italic mb-4">"Support automation cut our first reply to under 5 minutes."</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Resources & Newsletter */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-16">
+            <div>
+              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+                Playbooks, case studies, and updates
+              </h2>
+              <div className="space-y-6">
+                {resources.map((resource, index) => (
+                  <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                    <div className="flex items-start justify-between">
+                      <div>
+                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{resource.title}</h3>
+                        <div className="flex items-center space-x-4 text-sm text-gray-500">
+                          <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full">{resource.category}</span>
+                          <span>{resource.readTime}</span>
+                        </div>
+                      </div>
+                      <ArrowRight className="w-5 h-5 text-gray-400" />
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="text-xl font-bold text-slate-900 mb-3">{feature.title}</h3>
-                    <p className="text-slate-600 leading-relaxed">{feature.description}</p>
-                  </div>
+                ))}
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get one practical playbook each week</h3>
+              <p className="text-gray-600 mb-6">No fluff.</p>
+              <form className="space-y-4">
+                <input
+                  type="email"
+                  placeholder="Enter your email"
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                />
+                <button
+                  type="submit"
+                  className="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-24 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+              Questions, answered
+            </h2>
+          </div>
+          
+          <div className="space-y-4">
+            {faqs.map((faq, index) => (
+              <div key={index} className="bg-gray-50 rounded-xl">
+                <button className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 transition-colors">
+                  <span className="font-semibold text-gray-900">{faq.question}</span>
+                  <ChevronDown className="w-5 h-5 text-gray-500" />
+                </button>
+                <div className="px-6 pb-4">
+                  <p className="text-gray-600">{faq.answer}</p>
                 </div>
               </div>
             ))}
@@ -206,63 +588,30 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Demo Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6">
-              See It In Action
-            </h2>
-            <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Watch our AI tools work in real-time to engage visitors and score leads.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-            <div className="bg-slate-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">AI Receptionist Demo</h3>
-              <p className="text-slate-600 mb-6">Watch how our AI engages visitors and converts them into qualified leads.</p>
-              <div className="bg-white rounded-xl p-4 shadow-sm">
-                <AIReceptionistDemo />
-              </div>
-            </div>
-            
-            <div className="bg-slate-50 rounded-2xl p-8">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">Lead Scorer Demo</h3>
-              <p className="text-slate-600 mb-6">See how we automatically score and prioritize leads in real-time.</p>
-              <div className="bg-white rounded-xl p-4 shadow-sm">
-                <LeadScorerDemo />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-24 bg-gray-50">
+      {/* Final CTA */}
+      <section className="py-24 bg-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
-            Ready to Get Started?
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+            Ready to try practical AI?
           </h2>
-          <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Join 500+ businesses already using InnofyAI to accelerate their growth.
+          <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+            Start free and see value this week—or book a strategy call and we'll map the quickest win.
           </p>
-
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/start"
-              className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
             >
-              Start Free Trial
+              Start Free
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
+              className="inline-flex items-center justify-center px-8 py-4 border border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors"
             >
-              Book a Demo
+              Book a Call
             </Link>
           </div>
-          <p className="text-gray-500 text-sm mt-6">No credit card required. Cancel anytime.</p>
         </div>
       </section>
     </div>

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, Target, Zap, Shield, Users, Clock, CheckCircle, Linkedin } from 'lucide-react'
+import { ArrowRight, Target, Zap, Shield, Users, CheckCircle, Linkedin } from 'lucide-react'
 
 const missionPrinciples = [
   {

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, Bot, Target, Zap, TrendingUp, Users, Clock, CheckCircle, Star, MessageSquare, FileText, Search, BarChart3, Shield, Mail, Calendar, CreditCard, Smartphone, Globe, Database, Settings, BookOpen, Download, ChevronDown } from 'lucide-react'
+import { ArrowRight, Bot, Target, Zap, CheckCircle, Star, MessageSquare, FileText, Search, BarChart3, Calendar, CreditCard, Globe, Database, Settings, BookOpen, ChevronDown } from 'lucide-react'
 import { AIReceptionistDemo } from '@/components/ai-receptionist-demo'
 
 const products = [
@@ -68,8 +68,8 @@ const products = [
   },
   {
     id: 'owners-copilot',
-    name: 'Owner\'s Copilot',
-    description: '"What happened, why, what to do" across GA4 + CRM.',
+    name: 'Owner&apos;s Copilot',
+    description: '&quot;What happened, why, what to do&quot; across GA4 + CRM.',
     icon: BarChart3,
     kpi: 'Actions per week ↑',
     href: '/products/owners-copilot',
@@ -500,17 +500,17 @@ export default function Home() {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <blockquote className="text-2xl font-medium text-gray-900 italic mb-6">
-              "InnofyAI recovered leads we were losing every day. Bookings up in weeks, not months."
+              &quot;InnofyAI recovered leads we were losing every day. Bookings up in weeks, not months.&quot;
             </blockquote>
             <p className="text-gray-600">— Founder, Local Services</p>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 italic mb-4">"Setup took minutes. The 2-week report made the ROI obvious."</p>
+              <p className="text-gray-700 italic mb-4">&quot;Setup took minutes. The 2-week report made the ROI obvious.&quot;</p>
             </div>
             <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 italic mb-4">"Support automation cut our first reply to under 5 minutes."</p>
+              <p className="text-gray-700 italic mb-4">&quot;Support automation cut our first reply to under 5 minutes.&quot;</p>
             </div>
           </div>
         </div>
@@ -595,7 +595,7 @@ export default function Home() {
             Ready to try practical AI?
           </h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            Start free and see value this week—or book a strategy call and we'll map the quickest win.
+            Start free and see value this week—or book a strategy call and we&apos;ll map the quickest win.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

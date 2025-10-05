@@ -160,7 +160,7 @@ export function Footer() {
               >
                 {links.map((link) => (
                   <div key={link.name}>
-                    {link.external ? (
+                    {'external' in link && link.external ? (
                       <a
                         href={link.href}
                         target="_blank"

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { SimpleHeader } from "@/components/simple-header";
+import { Navigation } from "@/components/navigation";
 import { SimpleFooter } from "@/components/simple-footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
@@ -65,8 +65,8 @@ export default function RootLayout({
           storageKey="innofyai-ui-theme"
         >
           <div className="min-h-screen flex flex-col">
-            <SimpleHeader />
-            <main className="flex-1">
+            <Navigation />
+            <main className="flex-1 pt-16">
               {children}
             </main>
             <SimpleFooter />

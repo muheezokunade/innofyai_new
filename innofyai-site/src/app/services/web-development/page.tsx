@@ -231,7 +231,7 @@ export default function WebDevelopmentPage() {
             Ready to Build Your Website?
           </h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Let's create a web solution that drives your business forward with modern technology and design.
+            Let&apos;s create a web solution that drives your business forward with modern technology and design.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">

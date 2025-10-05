@@ -22,7 +22,7 @@ export default function TermsPage() {
         
         <h2 className="text-2xl font-semibold text-gray-900 mt-8 mb-4">Disclaimer</h2>
         <p className="text-gray-700 mb-6">
-          The materials on InnofyAI are provided on an 'as is' basis. InnofyAI makes no 
+          The materials on InnofyAI are provided on an &apos;as is&apos; basis. InnofyAI makes no 
           warranties, expressed or implied, and hereby disclaims and negates all other warranties.
         </p>
         

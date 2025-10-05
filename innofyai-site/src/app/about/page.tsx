@@ -35,7 +35,7 @@ export default function AboutPage() {
               About InnofyAI
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              We're on a mission to democratize AI for businesses of all sizes, 
+              We&apos;re on a mission to democratize AI for businesses of all sizes, 
               making powerful automation accessible and affordable.
             </p>
           </div>
@@ -60,7 +60,7 @@ export default function AboutPage() {
                 too complex or too expensive for small to medium businesses.
               </p>
               <p className="mb-6">
-                We set out to create "micro AI SaaS" solutions - powerful, focused tools that 
+                We set out to create &quot;micro AI SaaS&quot; solutions - powerful, focused tools that 
                 solve specific business problems without the complexity or cost of enterprise AI platforms.
               </p>
               <p>

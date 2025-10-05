@@ -38,7 +38,7 @@ export default function ContactPage() {
               Get in Touch
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to transform your business with AI? Let's discuss how we can help you grow.
+              Ready to transform your business with AI? Let&apos;s discuss how we can help you grow.
             </p>
           </div>
           

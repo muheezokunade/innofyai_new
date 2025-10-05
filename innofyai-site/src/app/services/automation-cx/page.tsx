@@ -196,7 +196,7 @@ export default function AutomationCXPage() {
             Ready to Automate Your CX?
           </h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Let's discuss how we can transform your customer experience with intelligent automation.
+            Let&apos;s discuss how we can transform your customer experience with intelligent automation.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center px-4 sm:px-0">

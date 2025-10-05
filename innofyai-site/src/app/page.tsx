@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, CheckCircle, Star, Bot, Target, Zap, Sparkles, TrendingUp, Users, Clock } from 'lucide-react'
+import { ArrowRight, Bot, Target, Zap, Sparkles, TrendingUp, Users, Clock } from 'lucide-react'
 import { AIReceptionistDemo } from '@/components/ai-receptionist-demo'
 import { LeadScorerDemo } from '@/components/lead-scorer-demo'
 

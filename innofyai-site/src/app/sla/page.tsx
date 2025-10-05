@@ -31,7 +31,7 @@ export default function SLAPage() {
           <ul className="space-y-2 text-gray-700">
             <li><strong>API Response Time:</strong> 95% of requests under 200ms</li>
             <li><strong>Page Load Time:</strong> 95% of pages under 2 seconds</li>
-            <li><strong>Data Processing:</strong> Real-time processing with <1 second latency</li>
+            <li><strong>Data Processing:</strong> Real-time processing with &lt;1 second latency</li>
           </ul>
         </div>
         

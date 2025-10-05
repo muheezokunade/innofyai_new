@@ -191,44 +191,44 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
-      <section className="py-20 lg:py-32">
+      <section className="py-12 sm:py-16 lg:py-20 xl:py-32">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-            <div className="space-y-8">
-              <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-gray-900 leading-[1.1] tracking-tight">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+            <div className="space-y-6 lg:space-y-8 order-2 lg:order-1">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-gray-900 leading-[1.1] tracking-tight">
                 Micro AI SaaS for
                 <span className="block text-blue-600">
                   real business growth
                 </span>
               </h1>
               
-              <p className="text-xl text-gray-600 leading-relaxed max-w-2xl">
+              <p className="text-lg sm:text-xl text-gray-600 leading-relaxed max-w-2xl">
                 InnofyAI gives owners simple tools that convert visitors, speed replies, and show what actually works—without hiring a tech team.
               </p>
               
-              <div className="flex flex-col sm:flex-row gap-4">
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link
                   href="/start"
-                  className="inline-flex items-center justify-center px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
                 >
                   Start Free
                 </Link>
                 <Link
                   href="/contact"
-                  className="inline-flex items-center justify-center px-8 py-4 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors"
+                  className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border border-gray-300 text-gray-700 font-semibold rounded-lg hover:bg-gray-50 transition-colors text-sm sm:text-base"
                 >
                   Book a Call
                 </Link>
               </div>
               
-              <p className="text-sm text-gray-500">No credit card needed · Setup in minutes</p>
+              <p className="text-xs sm:text-sm text-gray-500">No credit card needed · Setup in minutes</p>
             </div>
             
-            <div className="relative">
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-3xl blur-2xl"></div>
-              <div className="relative bg-white/90 backdrop-blur-sm border border-gray-200 rounded-2xl p-6 shadow-2xl">
-                <div className="text-center mb-4">
-                  <p className="text-sm text-gray-600">AI Receptionist · Live booking demo</p>
+            <div className="relative order-1 lg:order-2 mb-8 lg:mb-0">
+              <div className="absolute -inset-2 sm:-inset-4 bg-gradient-to-r from-blue-500/20 to-cyan-500/20 rounded-2xl sm:rounded-3xl blur-xl sm:blur-2xl"></div>
+              <div className="relative bg-white/90 backdrop-blur-sm border border-gray-200 rounded-xl sm:rounded-2xl p-4 sm:p-6 shadow-xl sm:shadow-2xl">
+                <div className="text-center mb-3 sm:mb-4">
+                  <p className="text-xs sm:text-sm text-gray-600">AI Receptionist · Live booking demo</p>
                 </div>
                 <AIReceptionistDemo />
               </div>
@@ -238,59 +238,59 @@ export default function Home() {
       </section>
 
       {/* Trust Logos */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-12 sm:py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">Trusted by teams and owners</p>
+          <div className="text-center mb-6 sm:mb-8">
+            <p className="text-xs sm:text-sm font-medium text-gray-500 uppercase tracking-wide">Trusted by teams and owners</p>
           </div>
-          <div className="flex items-center justify-center space-x-12 opacity-60">
-            <div className="text-2xl font-bold text-gray-400">Company A</div>
-            <div className="text-2xl font-bold text-gray-400">Company B</div>
-            <div className="text-2xl font-bold text-gray-400">Company C</div>
-            <div className="text-2xl font-bold text-gray-400">Company D</div>
-            <div className="text-2xl font-bold text-gray-400">Company E</div>
+          <div className="flex flex-wrap items-center justify-center gap-6 sm:gap-8 lg:gap-12 opacity-60">
+            <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-400">Company A</div>
+            <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-400">Company B</div>
+            <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-400">Company C</div>
+            <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-400">Company D</div>
+            <div className="text-lg sm:text-xl lg:text-2xl font-bold text-gray-400">Company E</div>
           </div>
         </div>
       </section>
 
       {/* Products Rail */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-12 sm:mb-16 lg:mb-20">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               10 micro tools that work while you sleep
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
               Each tool solves one job end-to-end. Plug in, prove the lift, then scale.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-4 sm:gap-6">
             {products.map((product) => (
               <Link
                 key={product.id}
                 href={product.href}
-                className="group bg-white border border-gray-200 rounded-2xl p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
+                className="group bg-white border border-gray-200 rounded-xl sm:rounded-2xl p-4 sm:p-6 hover:shadow-xl hover:-translate-y-1 transition-all duration-300"
               >
-                <div className={`w-12 h-12 bg-gradient-to-br ${product.color} rounded-xl flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                  <product.icon className="w-6 h-6 text-white" />
+                <div className={`w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br ${product.color} rounded-lg sm:rounded-xl flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                  <product.icon className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
-                <p className="text-gray-600 text-sm mb-3">{product.description}</p>
+                <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">{product.name}</h3>
+                <p className="text-gray-600 text-xs sm:text-sm mb-3">{product.description}</p>
                 <div className="flex items-center justify-between">
                   <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full text-xs font-medium">
                     {product.kpi}
                   </span>
-                  <ArrowRight className="w-4 h-4 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
+                  <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
                 </div>
               </Link>
             ))}
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <Link
               href="/products"
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
             >
               View All Tools
               <ArrowRight className="ml-2 w-4 h-4" />
@@ -300,69 +300,69 @@ export default function Home() {
       </section>
 
       {/* Proof Section */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Proof over promises
             </h2>
           </div>
           
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Before → After funnel</h3>
-              <div className="bg-white rounded-2xl p-8 shadow-sm">
-                <div className="space-y-4">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
+            <div className="mb-8 lg:mb-0">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Before → After funnel</h3>
+              <div className="bg-white rounded-xl sm:rounded-2xl p-6 sm:p-8 shadow-sm">
+                <div className="space-y-3 sm:space-y-4">
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-600">Site visitor</span>
-                    <div className="w-32 h-3 bg-gray-200 rounded-full">
-                      <div className="w-24 h-3 bg-gray-400 rounded-full"></div>
+                    <span className="text-sm sm:text-base text-gray-600">Site visitor</span>
+                    <div className="w-24 sm:w-32 h-2 sm:h-3 bg-gray-200 rounded-full">
+                      <div className="w-18 sm:w-24 h-2 sm:h-3 bg-gray-400 rounded-full"></div>
                     </div>
-                    <span className="text-sm text-gray-500">100%</span>
+                    <span className="text-xs sm:text-sm text-gray-500">100%</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-600">Lead</span>
-                    <div className="w-32 h-3 bg-gray-200 rounded-full">
-                      <div className="w-16 h-3 bg-blue-400 rounded-full"></div>
+                    <span className="text-sm sm:text-base text-gray-600">Lead</span>
+                    <div className="w-24 sm:w-32 h-2 sm:h-3 bg-gray-200 rounded-full">
+                      <div className="w-12 sm:w-16 h-2 sm:h-3 bg-blue-400 rounded-full"></div>
                     </div>
-                    <span className="text-sm text-gray-500">25%</span>
+                    <span className="text-xs sm:text-sm text-gray-500">25%</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-gray-600">Booked call</span>
-                    <div className="w-32 h-3 bg-gray-200 rounded-full">
-                      <div className="w-20 h-3 bg-green-400 rounded-full"></div>
+                    <span className="text-sm sm:text-base text-gray-600">Booked call</span>
+                    <div className="w-24 sm:w-32 h-2 sm:h-3 bg-gray-200 rounded-full">
+                      <div className="w-15 sm:w-20 h-2 sm:h-3 bg-green-400 rounded-full"></div>
                     </div>
-                    <span className="text-sm text-gray-500">38%</span>
+                    <span className="text-xs sm:text-sm text-gray-500">38%</span>
                   </div>
                 </div>
-                <p className="text-xs text-gray-500 mt-4">Median of recent deployments; sample ≥ 20 accounts; 14-day window.</p>
+                <p className="text-xs text-gray-500 mt-3 sm:mt-4">Median of recent deployments; sample ≥ 20 accounts; 14-day window.</p>
               </div>
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">KPI tiles</h3>
-              <div className="grid grid-cols-2 gap-4">
-                <div className="bg-white rounded-xl p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-blue-600 mb-2">+38%</div>
-                  <div className="text-sm text-gray-600">average lift in bookings</div>
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">KPI tiles</h3>
+              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+                <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 text-center shadow-sm">
+                  <div className="text-2xl sm:text-3xl font-bold text-blue-600 mb-1 sm:mb-2">+38%</div>
+                  <div className="text-xs sm:text-sm text-gray-600">average lift in bookings</div>
                 </div>
-                <div className="bg-white rounded-xl p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-green-600 mb-2">−42%</div>
-                  <div className="text-sm text-gray-600">time-to-first-reply</div>
+                <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 text-center shadow-sm">
+                  <div className="text-2xl sm:text-3xl font-bold text-green-600 mb-1 sm:mb-2">−42%</div>
+                  <div className="text-xs sm:text-sm text-gray-600">time-to-first-reply</div>
                 </div>
-                <div className="bg-white rounded-xl p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-yellow-600 mb-2">+1.1★</div>
-                  <div className="text-sm text-gray-600">rating improvement</div>
+                <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 text-center shadow-sm">
+                  <div className="text-2xl sm:text-3xl font-bold text-yellow-600 mb-1 sm:mb-2">+1.1★</div>
+                  <div className="text-xs sm:text-sm text-gray-600">rating improvement</div>
                 </div>
-                <div className="bg-white rounded-xl p-6 text-center shadow-sm">
-                  <div className="text-3xl font-bold text-purple-600 mb-2">14-day</div>
-                  <div className="text-sm text-gray-600">uplift reports, always</div>
+                <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 text-center shadow-sm">
+                  <div className="text-2xl sm:text-3xl font-bold text-purple-600 mb-1 sm:mb-2">14-day</div>
+                  <div className="text-xs sm:text-sm text-gray-600">uplift reports, always</div>
                 </div>
               </div>
-              <div className="mt-6">
+              <div className="mt-4 sm:mt-6">
                 <Link
                   href="/case-studies"
-                  className="text-blue-600 hover:text-blue-700 font-medium"
+                  className="text-blue-600 hover:text-blue-700 font-medium text-sm sm:text-base"
                 >
                   See case studies →
                 </Link>
@@ -373,29 +373,29 @@ export default function Home() {
       </section>
 
       {/* Services Teaser */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">
               Expert services to amplify your tools
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto">
               When you need hands-on help, our team ships the fastest path to impact.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {services.map((service, index) => (
-              <div key={index} className="bg-gray-50 rounded-2xl p-8 hover:shadow-xl transition-all duration-300">
-                <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-                  <service.icon className="w-6 h-6 text-blue-600" />
+              <div key={index} className="bg-gray-50 rounded-xl sm:rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg sm:rounded-xl flex items-center justify-center mb-4 sm:mb-6">
+                  <service.icon className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-6">{service.description}</p>
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">{service.title}</h3>
+                <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">{service.description}</p>
                 <ul className="space-y-2">
                   {service.bullets.map((bullet, bulletIndex) => (
-                    <li key={bulletIndex} className="flex items-center text-sm text-gray-600">
-                      <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
+                    <li key={bulletIndex} className="flex items-center text-xs sm:text-sm text-gray-600">
+                      <CheckCircle className="w-3 h-3 sm:w-4 sm:h-4 text-green-500 mr-2 flex-shrink-0" />
                       {bullet}
           </li>
                   ))}
@@ -404,10 +404,10 @@ export default function Home() {
             ))}
           </div>
           
-          <div className="text-center mt-12">
+          <div className="text-center mt-8 sm:mt-12">
             <Link
               href="/contact"
-              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
             >
               Book a Discovery Call
               <ArrowRight className="ml-2 w-4 h-4" />
@@ -417,39 +417,39 @@ export default function Home() {
       </section>
 
       {/* Training Teaser */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
             Make AI practical for your team
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8">
             Role-based workshops for owners, marketing, support, and analysts—using your data and our playbooks.
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="w-6 h-6 text-green-600" />
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-8 mb-8 sm:mb-12">
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-green-100 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <BookOpen className="w-5 h-5 sm:w-6 sm:h-6 text-green-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Live, hands-on sessions</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">Live, hands-on sessions</h3>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <FileText className="w-6 h-6 text-blue-600" />
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <FileText className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Templates you&apos;ll actually use</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">Templates you&apos;ll actually use</h3>
             </div>
-            <div className="bg-white rounded-xl p-6 shadow-sm">
-              <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">
-                <Star className="w-6 h-6 text-purple-600" />
+            <div className="bg-white rounded-xl p-4 sm:p-6 shadow-sm">
+              <div className="w-10 h-10 sm:w-12 sm:h-12 bg-purple-100 rounded-lg sm:rounded-xl flex items-center justify-center mx-auto mb-3 sm:mb-4">
+                <Star className="w-5 h-5 sm:w-6 sm:h-6 text-purple-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Certificates and badges</h3>
+              <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2">Certificates and badges</h3>
             </div>
           </div>
           
           <Link
             href="/training"
-            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
           >
             Schedule a Training
             <ArrowRight className="ml-2 w-4 h-4" />
@@ -458,36 +458,36 @@ export default function Home() {
       </section>
 
       {/* Integrations Strip */}
-      <section className="py-16 bg-white">
+      <section className="py-12 sm:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <p className="text-sm font-medium text-gray-500 uppercase tracking-wide">Works with your stack</p>
+          <div className="text-center mb-6 sm:mb-8">
+            <p className="text-xs sm:text-sm font-medium text-gray-500 uppercase tracking-wide">Works with your stack</p>
           </div>
-          <div className="flex items-center justify-center space-x-8 opacity-60">
+          <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 lg:gap-8 opacity-60">
             {integrations.map((integration, index) => (
-              <div key={index} className="flex items-center space-x-2">
-                <integration.icon className="w-6 h-6 text-gray-400" />
-                <span className="text-gray-600 font-medium">{integration.name}</span>
+              <div key={index} className="flex items-center space-x-1 sm:space-x-2">
+                <integration.icon className="w-4 h-4 sm:w-5 sm:h-5 lg:w-6 lg:h-6 text-gray-400" />
+                <span className="text-gray-600 font-medium text-sm sm:text-base">{integration.name}</span>
               </div>
             ))}
           </div>
-          <p className="text-center text-sm text-gray-500 mt-4">Use our library of ready-to-run n8n recipes.</p>
+          <p className="text-center text-xs sm:text-sm text-gray-500 mt-3 sm:mt-4">Use our library of ready-to-run n8n recipes.</p>
         </div>
       </section>
 
       {/* Templates Gallery Teaser */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
             Start fast with proven templates
           </h2>
-          <p className="text-xl text-gray-600 mb-8">
+          <p className="text-lg sm:text-xl text-gray-600 mb-6 sm:mb-8">
             Receptionist scripts, follow-up cadences, review replies, SEO page blueprints, and more.
           </p>
           
           <Link
             href="/templates"
-            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+            className="inline-flex items-center px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
           >
             Browse Templates
             <ArrowRight className="ml-2 w-4 h-4" />
@@ -496,46 +496,46 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <blockquote className="text-2xl font-medium text-gray-900 italic mb-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <blockquote className="text-lg sm:text-xl lg:text-2xl font-medium text-gray-900 italic mb-4 sm:mb-6">
               &quot;InnofyAI recovered leads we were losing every day. Bookings up in weeks, not months.&quot;
             </blockquote>
-            <p className="text-gray-600">— Founder, Local Services</p>
+            <p className="text-gray-600 text-sm sm:text-base">— Founder, Local Services</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 italic mb-4">&quot;Setup took minutes. The 2-week report made the ROI obvious.&quot;</p>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8">
+            <div className="bg-gray-50 rounded-xl p-4 sm:p-6">
+              <p className="text-gray-700 italic text-sm sm:text-base">&quot;Setup took minutes. The 2-week report made the ROI obvious.&quot;</p>
             </div>
-            <div className="bg-gray-50 rounded-xl p-6">
-              <p className="text-gray-700 italic mb-4">&quot;Support automation cut our first reply to under 5 minutes.&quot;</p>
+            <div className="bg-gray-50 rounded-xl p-4 sm:p-6">
+              <p className="text-gray-700 italic text-sm sm:text-base">&quot;Support automation cut our first reply to under 5 minutes.&quot;</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Resources & Newsletter */}
-      <section className="py-24 bg-gray-50">
+      <section className="py-16 sm:py-20 lg:py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16">
-            <div>
-              <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-16">
+            <div className="mb-8 lg:mb-0">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
                 Playbooks, case studies, and updates
               </h2>
-              <div className="space-y-6">
+              <div className="space-y-4 sm:space-y-6">
                 {resources.map((resource, index) => (
-                  <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
+                  <div key={index} className="bg-white rounded-xl p-4 sm:p-6 shadow-sm hover:shadow-md transition-shadow">
                     <div className="flex items-start justify-between">
                       <div>
-                        <h3 className="text-lg font-semibold text-gray-900 mb-2">{resource.title}</h3>
-                        <div className="flex items-center space-x-4 text-sm text-gray-500">
+                        <h3 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">{resource.title}</h3>
+                        <div className="flex items-center space-x-3 sm:space-x-4 text-xs sm:text-sm text-gray-500">
                           <span className="bg-blue-50 text-blue-700 px-2 py-1 rounded-full">{resource.category}</span>
                           <span>{resource.readTime}</span>
                         </div>
                       </div>
-                      <ArrowRight className="w-5 h-5 text-gray-400" />
+                      <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 text-gray-400" />
                     </div>
                   </div>
                 ))}
@@ -543,17 +543,17 @@ export default function Home() {
             </div>
             
             <div>
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get one practical playbook each week</h3>
-              <p className="text-gray-600 mb-6">No fluff.</p>
-              <form className="space-y-4">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Get one practical playbook each week</h3>
+              <p className="text-gray-600 mb-4 sm:mb-6 text-sm sm:text-base">No fluff.</p>
+              <form className="space-y-3 sm:space-y-4">
                 <input
                   type="email"
                   placeholder="Enter your email"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+                  className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                 />
                 <button
                   type="submit"
-                  className="w-full px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors"
+                  className="w-full px-4 sm:px-6 py-2 sm:py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors text-sm sm:text-base"
                 >
                   Subscribe
                 </button>
@@ -564,23 +564,23 @@ export default function Home() {
       </section>
 
       {/* FAQ */}
-      <section className="py-24 bg-white">
+      <section className="py-16 sm:py-20 lg:py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
               Questions, answered
             </h2>
           </div>
           
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {faqs.map((faq, index) => (
               <div key={index} className="bg-gray-50 rounded-xl">
-                <button className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-100 transition-colors">
-                  <span className="font-semibold text-gray-900">{faq.question}</span>
-                  <ChevronDown className="w-5 h-5 text-gray-500" />
+                <button className="w-full px-4 sm:px-6 py-3 sm:py-4 text-left flex items-center justify-between hover:bg-gray-100 transition-colors">
+                  <span className="font-semibold text-gray-900 text-sm sm:text-base">{faq.question}</span>
+                  <ChevronDown className="w-4 h-4 sm:w-5 sm:h-5 text-gray-500" />
                 </button>
-                <div className="px-6 pb-4">
-                  <p className="text-gray-600">{faq.answer}</p>
+                <div className="px-4 sm:px-6 pb-3 sm:pb-4">
+                  <p className="text-gray-600 text-sm sm:text-base">{faq.answer}</p>
                 </div>
               </div>
             ))}
@@ -589,25 +589,25 @@ export default function Home() {
       </section>
 
       {/* Final CTA */}
-      <section className="py-24 bg-blue-600">
+      <section className="py-16 sm:py-20 lg:py-24 bg-blue-600">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-white mb-4 sm:mb-6">
             Ready to try practical AI?
           </h2>
-          <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
+          <p className="text-lg sm:text-xl text-blue-100 mb-8 sm:mb-10 max-w-2xl mx-auto">
             Start free and see value this week—or book a strategy call and we&apos;ll map the quickest win.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center">
             <Link
               href="/start"
-              className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-600 font-semibold rounded-lg hover:bg-blue-50 transition-colors text-sm sm:text-base"
             >
               Start Free
             </Link>
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center px-8 py-4 border border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 border border-white text-white font-semibold rounded-lg hover:bg-white hover:text-blue-600 transition-colors text-sm sm:text-base"
             >
               Book a Call
             </Link>

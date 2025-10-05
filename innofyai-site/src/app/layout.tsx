@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Navigation } from "@/components/navigation";
-import { SimpleFooter } from "@/components/simple-footer";
+import { Footer } from "@/components/footer";
 import { ThemeProvider } from "@/components/theme-provider";
 
 const inter = Inter({ 
@@ -69,7 +69,7 @@ export default function RootLayout({
             <main className="flex-1 pt-16">
               {children}
             </main>
-            <SimpleFooter />
+            <Footer />
           </div>
         </ThemeProvider>
       </body>

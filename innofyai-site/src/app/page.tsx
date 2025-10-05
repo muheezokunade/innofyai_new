@@ -437,7 +437,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mx-auto mb-4">
                 <FileText className="w-6 h-6 text-blue-600" />
               </div>
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Templates you'll actually use</h3>
+              <h3 className="text-lg font-bold text-gray-900 mb-2">Templates you&apos;ll actually use</h3>
             </div>
             <div className="bg-white rounded-xl p-6 shadow-sm">
               <div className="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mx-auto mb-4">

@@ -1,0 +1,11 @@
+# *
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+
+# Host
+Host: https://innofyai.com
+
+# Sitemaps
+Sitemap: https://innofyai.com/sitemap.xml

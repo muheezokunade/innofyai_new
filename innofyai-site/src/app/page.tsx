@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { ArrowRight, Bot, Target, Zap, CheckCircle, Star, MessageSquare, FileText, Search, BarChart3, Calendar, CreditCard, Globe, Database, Settings, BookOpen, ChevronDown } from 'lucide-react'
+import { ArrowRight, Bot, Target, Zap, CheckCircle, Star, MessageSquare, FileText, Search, BarChart3, Calendar, CreditCard, Globe, Database, Settings, BookOpen, ChevronDown, Phone } from 'lucide-react'
 import { AIReceptionistDemo } from '@/components/ai-receptionist-demo'
 
 const products = [
